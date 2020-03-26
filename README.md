@@ -1,1 +1,1 @@
-# docker の　ubuntuベースのansibleコンテナ
+# ubuntuベースのansibleコンテナ
