@@ -1,4 +1,4 @@
-# ubuntuベースのansibleコンテナ
+# ubuntuベースのansibleイメージ
 
 ## install APP
 - ansible
