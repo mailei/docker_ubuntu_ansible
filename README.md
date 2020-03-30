@@ -1,8 +1,9 @@
-# ubuntuベースのansibleイメージ
+# ansible and opensshd　installed on the docker ubuntu images
 
-## install APP
+## This container install APP
 - ansible
 - openssh
 
-## ssh port
-- 22
+## open port
+- ssh port
+  - 22
