@@ -1,8 +1,8 @@
 
-FROM ubuntu:20.10
+FROM ubuntu:20.04
 
-RUN apt update -y  && apt install -y openssh-server python software-properties-common vim
-RUN apt install -y software-properties-common && apt-add-repository --yes --update ppa:ansible/ansible &&  apt install -y ansible
+RUN apt update -y  && apt install -y tzdata &&  apt install -y openssh-server python software-properties-common vim sshpass
+RUN apt-add-repository --yes --update ppa:ansible/ansible &&  apt install -y ansible
 RUN mkdir /var/run/sshd
 RUN echo 'root:root' | chpasswd
 RUN sed -ri 's/^#?PermitRootLogin\s+.*/PermitRootLogin yes/' /etc/ssh/sshd_config
